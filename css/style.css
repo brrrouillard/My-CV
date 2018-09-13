@@ -9,7 +9,7 @@ html, body, div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    background-color: #e1e2ef;
+    background-color: #ede8e7;
 }
 
 .item {
@@ -114,18 +114,22 @@ BIO SECTION
 GOODBYE SECTION
 *
 */
-
+.goodbye-background {
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-color: #9d8d8c;   
+}
 .goodbyeBox {
     grid-column-start: 4;
     grid-column-end: span 1;
     grid-row-start: 5;
     grid-row-end: span 1;
-    
-
 }
 
 .goodbye{
-    font-size: 400%;
+    font-size: 300%;
     padding-right: 20px;
     text-align: right;
 }
