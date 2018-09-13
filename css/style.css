@@ -148,3 +148,7 @@ h1 {
     margin: 0px;
     padding-top: 10px;
 }
+
+a {
+    text-decoration: none;
+}
