@@ -18,13 +18,25 @@ html, body, div {
 
 .hello {
     grid-column-start: 1;
-    grid-column-end: span1;
+    grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
-    font-size: 300%;
+    font-size: 200%;
     padding: 25px;
     padding-bottom: 0px;
     color: #05204a;
+}
+
+.myPicture {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    font-size: 200%;
+    padding: 25px;
+    padding-bottom: 0px;
+    background-image: url("../assets/me.jpg");
+    background-size: 100%;
 }
 
 /*
@@ -46,7 +58,7 @@ SKILLS SECTION
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
-    font-size: 100%;
+    font-size: 150%;
     padding-bottom: 0px;
     color: #05204a;
     justify-items: center;
@@ -81,7 +93,7 @@ BIO SECTION
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
-    font-size: 100%;
+    font-size: 150%;
     padding-bottom: 0px;
     color: #05204a;
     justify-items: center;
