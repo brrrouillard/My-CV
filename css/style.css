@@ -2,42 +2,75 @@ html, body, div {
     height: 100%; 
     margin: 0px;
     font-family: "Helvetica";
+    color: #05204a;
 }
    
 .container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
-    background-color: #f3e37c;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #e1e2ef;
 }
 
 .item {
     display: grid;
-    align-items: center;
-    justify-items: center;
 }
 
-.item-a {
+.title {
     grid-column-start: 2;
-    grid-column-end: span 2;
+    grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 2;
 }
 
-.item-b {
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    grid-row-start: 2;
-    grid-row-end: span 1;
+.skills-background {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-color: #bfacaa;   
+    border-right: 1px dashed #b497d6;
+    
 }
 
-.bio {
-    text-align: center;
+.hello {
+    grid-column-start: 1;
+    grid-column-end: span1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    font-size: 300%;
+    padding: 25px;
+    padding-bottom: 0px;
+    color: #05204a;
+}
+
+.goodbyeBox {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+
+}
+
+.goodbye{
+    font-size: 600%;
+    padding-right: 20px;
+}
+
+.skills-content {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    padding: 25px;
+    padding-top: 0px;
 }
 
 .myName {
-    color: #eea243;
+    color: #05204a;
     font-size: 400%;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 p, ul, li {
@@ -46,4 +79,10 @@ p, ul, li {
 
 p {
     margin-top: 20px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
 }
